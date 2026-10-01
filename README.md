@@ -1,6 +1,12 @@
 # 🚀 NanoOpt — High Performance Windows PC Optimizer
 
 <p align="center">
+  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3" />
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg" alt="Windows" />
+  <img src="https://img.shields.io/badge/Version-1.0.0-success.svg" alt="Version 1.0.0" />
+</p>
+
+<p align="center">
   <strong>Lightweight · Modern Fluent Design · Safe RAM Purge · Junk Cleaner · Auto-Optimizer</strong>
 </p>
 
@@ -25,6 +31,13 @@
 1. Go to the [**Releases**](https://github.com/muneebshahxad/NanoOpt/releases) page.
 2. Download the latest `NanoOpt.exe`.
 3. Right-click and **Run as Administrator** (required for deep system cache cleanup and memory management).
+
+---
+
+## 📜 License
+
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.  
+See the [LICENSE](LICENSE) file for the full license text.
 
 ---
 

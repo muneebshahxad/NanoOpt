@@ -1,3 +1,18 @@
+# ------------------------------------------------------------------------------
+# NanoOpt - High Performance Windows PC Optimizer
+# Copyright (C) 2026 Muneeb Shahxad <https://github.com/muneebshahxad>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# ------------------------------------------------------------------------------
+
 import os
 import sys
 import time
