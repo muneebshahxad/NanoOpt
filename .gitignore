@@ -1,0 +1,19 @@
+# Build artifacts
+dist/
+dist_v2/
+build/
+*.spec
+
+# Runtime files
+settings.json
+nanoopt_activity.log
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
