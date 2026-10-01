@@ -31,7 +31,7 @@
 - **🪟 Auto-Start on Boot**: Configures Windows Task Scheduler with `HighestPrivileges` to seamlessly start with Windows without UAC prompts.
 - **📊 Exportable Activity Logs**: Track every byte saved with rotating log files and one-click CSV exports.
 - **🔄 Auto-Updates (OTA)**: Automatically checks GitHub Releases for new updates and performs seamless one-click file updates.
-- **🎨 Windows 11 Fluent UI**: System-adaptive dark and light mode powered by PySide6 and Fluent Widgets.
+- **🎨 UI**: System-adaptive dark and light mode powered by PySide6 and Fluent Widgets.
 
 ---
 
