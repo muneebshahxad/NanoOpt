@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/License-Proprietary-red.svg" alt="License: Proprietary" />
   <img src="https://img.shields.io/badge/Source-Closed%20Source-lightgrey.svg" alt="Closed Source" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg" alt="Windows" />
-  <img src="https://img.shields.io/badge/Version-1.0.0-success.svg" alt="Version 1.0.0" />
+  <img src="https://img.shields.io/badge/Version-1.1.0-success.svg" alt="Version 1.1.0" />
 </p>
 
 <p align="center">
