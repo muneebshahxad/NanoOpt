@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="NanoOpt" width="100%" />
+</p>
+
 # 🚀 NanoOpt — High Performance Windows PC Optimizer
 
 <p align="center">
