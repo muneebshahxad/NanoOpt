@@ -15,7 +15,7 @@
 - **🔔 Windows System Tray & Toast Notifications**: Runs discreetly in your taskbar with rocket icon and delivers native Windows notifications when memory is recovered.
 - **🪟 Auto-Start on Boot**: Configures Windows Task Scheduler with `HighestPrivileges` to seamlessly start with Windows without UAC prompts.
 - **📊 Exportable Activity Logs**: Track every byte saved with rotating log files and one-click CSV exports.
-- **🔄 Over-The-Air (OTA) Updates**: Automatically checks GitHub Releases for new updates and performs seamless one-click file updates.
+- **🔄 Updates**: Automatically checks GitHub Releases for new updates and performs seamless one-click file updates.
 - **🎨 Windows 11 Fluent UI**: System-adaptive dark and light mode powered by PySide6 and Fluent Widgets.
 
 ---
@@ -25,31 +25,6 @@
 1. Go to the [**Releases**](https://github.com/muneebshahxad/NanoOpt/releases) page.
 2. Download the latest `NanoOpt.exe`.
 3. Right-click and **Run as Administrator** (required for deep system cache cleanup and memory management).
-
----
-
-## 🛠️ Development & Building from Source
-
-### Prerequisites
-- Python 3.10+
-- Windows 10 or 11 (64-bit)
-
-### Installation
-```bash
-git clone https://github.com/muneebshahxad/NanoOpt.git
-cd NanoOpt
-pip install -r requirements.txt
-```
-
-### Run
-```bash
-python main.py
-```
-
-### Build Executable
-```bash
-pyinstaller --noconsole --onefile --icon=icon.ico --name=NanoOpt --distpath=dist_v2 --clean --hidden-import=requests --hidden-import=packaging --hidden-import=packaging.version main.py
-```
 
 ---
 
