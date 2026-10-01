@@ -1,4 +1,9 @@
-# Build artifacts
+# Proprietary Source Code (Strictly Kept Local)
+*.py
+main.py
+requirements.txt
+
+# Build & packaging artifacts
 dist/
 dist_v2/
 build/
@@ -9,11 +14,14 @@ settings.json
 nanoopt_activity.log
 *.log
 
-# Python
+# Python cache & compiled files
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# IDE
+# IDE & Editor files
 .vscode/
 .idea/
+*.swp
+*.bak
