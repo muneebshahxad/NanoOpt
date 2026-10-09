@@ -23,15 +23,20 @@
 
 ## ✨ Features
 
-- **🚀 Smart RAM Boost**: Safely frees memory via Windows `EmptyWorkingSet` while protecting critical apps.
-- **🧹 Advanced 14-Target Deep Cleaner**: Cleans 14 Windows system areas including Windows Update cache, Prefetch, shader caches, crash dumps, and temp files with strict Recycle Bin and Downloads protection.
-- **⚙️ Configurable JSON Settings**: Customize auto-purge RAM thresholds, polling intervals, and notification preferences.
-- **🛡️ Process & Directory Whitelist**: Built-in exclusions for streaming apps (OBS), system components (`dwm.exe`, `explorer.exe`), games, and custom paths.
-- **🔔 Windows System Tray & Toast Notifications**: Runs discreetly in your taskbar with rocket icon and delivers native Windows notifications when memory is recovered.
-- **🪟 Auto-Start on Boot**: Configures Windows Task Scheduler with `HighestPrivileges` to seamlessly start with Windows without UAC prompts.
-- **📊 Exportable Activity Logs**: Track every byte saved with rotating log files and one-click CSV exports.
-- **🔄 Auto-Updates (OTA)**: Automatically checks GitHub Releases for new updates and performs seamless one-click file updates.
-- **🎨 UI**: System-adaptive dark and light mode powered by PySide6 and Fluent Widgets.
+- **🚀 Smart RAM Boost**: Instantly frees up memory with a single click while safely protecting running programs.
+- **🧹 14-Target Deep Cleaner**: Safely finds and removes junk files from 14 Windows areas (Windows Update cache, prefetch, shader caches, crash dumps, and temp files).
+- **🛡️ 100% Safe & Protected**: Your personal **Downloads** folder and **Recycle Bin** are strictly protected and never touched.
+- **🎮 Game Mode Optimizer**: Automatically switches Windows to "High Performance" power mode and lowers background app priority when gaming.
+- **⚡ Standby Memory Purge**: Clears Windows standby memory list before games start to eliminate in-game micro-stutters.
+- **🎯 Game Watch List**: Automatically detects when your selected games launch and applies instant optimizations.
+- **🌐 Optional Browser Cache Clean**: Choose whether to clean browser caches (Chrome, Edge, Firefox, Brave, Opera) via a simple toggle in Settings (turned **OFF** by default).
+- **⚙️ Auto-Purge RAM**: Set your preferred RAM threshold (e.g. 85%) so NanoOpt automatically purges memory in the background when usage gets high.
+- **🛡️ App & Directory Whitelist**: Add your favorite apps and folders to the exclusion list so they are never touched.
+- **🪟 Run on Startup**: Seamlessly starts with Windows using Task Scheduler without annoying UAC prompts.
+- **🔔 Desktop Notifications**: Displays helpful, silent desktop notifications when memory is recovered.
+- **📊 Activity History & CSV Export**: Automatically logs all cleaning events with one-click export to CSV.
+- **🔄 Instant Auto-Updates (OTA)**: Checks for new versions automatically and updates in one click.
+- **🌙 Modern Windows 11 Design**: Clean, compact dark/light mode interface with real-time CPU and RAM monitoring rings.
 
 ---
 
