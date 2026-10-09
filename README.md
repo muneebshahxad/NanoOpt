@@ -8,11 +8,11 @@
   <img src="https://img.shields.io/badge/License-Proprietary-red.svg" alt="License: Proprietary" />
   <img src="https://img.shields.io/badge/Source-Closed%20Source-lightgrey.svg" alt="Closed Source" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg" alt="Windows" />
-  <img src="https://img.shields.io/badge/Version-1.1.0-success.svg" alt="Version 1.1.0" />
+  <img src="https://img.shields.io/badge/Version-1.2.0-success.svg" alt="Version 1.2.0" />
 </p>
 
 <p align="center">
-  <strong>Lightweight · Modern Fluent Design · Safe RAM Purge · Junk Cleaner · Auto-Optimizer</strong>
+  <strong>Lightweight · Modern Fluent Design · Safe RAM Purge · 14-Target Junk Cleaner · Auto-Optimizer</strong>
 </p>
 
 ---
@@ -24,7 +24,7 @@
 ## ✨ Features
 
 - **🚀 Smart RAM Boost**: Safely frees memory via Windows `EmptyWorkingSet` while protecting critical apps.
-- **🧹 System Junk Cleaner**: Cleans User Temp, Windows Temp, Prefetch, LogFiles, SoftwareDistribution downloads, crash dumps, and empties the Recycle Bin.
+- **🧹 Advanced 14-Target Deep Cleaner**: Cleans 14 Windows system areas including Windows Update cache, Prefetch, shader caches, crash dumps, and temp files with strict Recycle Bin and Downloads protection.
 - **⚙️ Configurable JSON Settings**: Customize auto-purge RAM thresholds, polling intervals, and notification preferences.
 - **🛡️ Process & Directory Whitelist**: Built-in exclusions for streaming apps (OBS), system components (`dwm.exe`, `explorer.exe`), games, and custom paths.
 - **🔔 Windows System Tray & Toast Notifications**: Runs discreetly in your taskbar with rocket icon and delivers native Windows notifications when memory is recovered.
@@ -32,6 +32,12 @@
 - **📊 Exportable Activity Logs**: Track every byte saved with rotating log files and one-click CSV exports.
 - **🔄 Auto-Updates (OTA)**: Automatically checks GitHub Releases for new updates and performs seamless one-click file updates.
 - **🎨 UI**: System-adaptive dark and light mode powered by PySide6 and Fluent Widgets.
+
+---
+
+## 📋 Changelog & Version History
+
+See the complete feature log and release history across all versions in [**CHANGELOG.md**](CHANGELOG.md).
 
 ---
 
