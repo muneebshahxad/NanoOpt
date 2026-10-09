@@ -134,6 +134,38 @@
 
 ---
 
+## 🟣 v1.3.0 — Live Activity Log Terminal & Dynamic Layout
+> Released: October 2026
+
+### New Features Added
+| Feature | Details |
+|---|---|
+| **Live Activity Log Terminal** | Integrated read-only `TextEdit` terminal on the main dashboard with monospace Consolas (10pt) font, timestamped entries `[HH:MM:SS]`, and translucent theme-aware styling. |
+| **Settings "Show/Hide Logs" Toggle** | User-controlled visibility switch in Settings dialog (`show_logs`). Defaults to **ON**. Dynamically toggles terminal visibility and resizes window instantly. |
+| **Thread-Safe PySide6 Logging** | Asynchronous workers (`RamWorker`, `JunkWorker`) emit granular updates through custom `Signal(str, str)` (Text, ColorCode) directly to the GUI thread without race conditions or UI freezing. |
+| **Granular Step-by-Step Reporting** | Real-time feedback for all 14 targets: scanning notices (Cyan `#38bdf8`), freed byte amounts (Green `#22c55e`), locked system files skipped (Yellow `#facc15`), and process working set counts. |
+| **Locked File Tracking** | Gracefully tracks locked/in-use Windows files during deep clean and reports summary to terminal without stopping execution. |
+| **Auto-Scroll & 150-Line Buffer** | Auto-scrolls to the absolute bottom on every entry. Automatically caps history at 150 lines to prevent memory bloat. |
+| **Adaptive Dynamic Layout** | Window height resizes dynamically (`390×315` when hidden, `390×440` when visible, up to `490` during OTA updates) with zero clipping or squishing of CPU/RAM cards. |
+
+### Settings Dialog (v1.3.0 Final)
+| Setting | Default | Description |
+|---|---|---|
+| Auto-Purge RAM threshold | 85% | SpinBox 50–99% with full % symbol |
+| Enable Background Auto-Purge | ON | Toggle |
+| Run on Startup | OFF | Toggle |
+| Taskbar Toast Notifications | ON | Toggle |
+| Game Mode | OFF | Toggle |
+| Clean Browser Cache | OFF | Toggle (browser history/cache protected by default) |
+| Show/Hide Logs | **ON** | **New toggle** — Controls terminal visibility on main dashboard |
+| Process Exclusions | (list) | Comma-separated .exe names |
+| Game Watch List | (empty) | Comma-separated game .exe names |
+| Export CSV | — | Button |
+| Open Log | — | Button |
+| Save & Apply | — | Button |
+
+---
+
 ## 🔐 Code Signing & Security
 | Item | Value |
 |---|---|
@@ -157,6 +189,7 @@ NanoOpt/
 ├── watch_list.json          ← Auto-created at runtime
 ├── nanoopt_activity.log     ← Auto-created at runtime
 ├── App_Certificate.cer      ← In git (for publisher trust)
+├── CHANGELOG.md             ← In git (Full feature history log)
 ├── .gitignore               ← In git
 ├── LICENSE                  ← In git (Proprietary)
 ├── README.md                ← In git
@@ -165,7 +198,8 @@ NanoOpt/
 └── builds/
     ├── v1.0.0/NanoOpt.exe
     ├── v1.1.0/NanoOpt.exe
-    └── v1.2.0/NanoOpt.exe   ← Current
+    ├── v1.2.0/NanoOpt.exe
+    └── v1.3.0/NanoOpt.exe   ← Current
 ```
 
 ---
@@ -176,7 +210,7 @@ NanoOpt/
   --noconsole --onefile --icon=icon.ico `
   --version-file=version_info.txt `
   --name=NanoOpt `
-  --distpath=builds\v1.2.0 `
+  --distpath=builds\v1.3.0 `
   --clean `
   --hidden-import=requests `
   --hidden-import=packaging `
@@ -187,7 +221,7 @@ NanoOpt/
 ## 🔏 Sign Command (Standard)
 ```powershell
 $cert = Get-ChildItem Cert:\CurrentUser\My -CodeSigningCert | Where-Object { $_.Subject -match "MuneebShahxad" } | Select-Object -First 1
-Set-AuthenticodeSignature -FilePath "builds\v1.2.0\NanoOpt.exe" -Certificate $cert -HashAlgorithm SHA256
+Set-AuthenticodeSignature -FilePath "builds\v1.3.0\NanoOpt.exe" -Certificate $cert -HashAlgorithm SHA256
 ```
 
 ---

@@ -8,11 +8,11 @@
   <img src="https://img.shields.io/badge/License-Proprietary-red.svg" alt="License: Proprietary" />
   <img src="https://img.shields.io/badge/Source-Closed%20Source-lightgrey.svg" alt="Closed Source" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg" alt="Windows" />
-  <img src="https://img.shields.io/badge/Version-1.2.0-success.svg" alt="Version 1.2.0" />
+  <img src="https://img.shields.io/badge/Version-1.3.0-success.svg" alt="Version 1.3.0" />
 </p>
 
 <p align="center">
-  <strong>Lightweight · Modern Fluent Design · Safe RAM Purge · 14-Target Junk Cleaner · Auto-Optimizer</strong>
+  <strong>Lightweight · Modern Fluent Design · Safe RAM Purge · 14-Target Junk Cleaner · Live Terminal · Auto-Optimizer</strong>
 </p>
 
 ---
@@ -25,6 +25,7 @@
 
 - **🚀 Smart RAM Boost**: Instantly frees up memory with a single click while safely protecting running programs.
 - **🧹 14-Target Deep Cleaner**: Safely finds and removes junk files from 14 Windows areas (Windows Update cache, prefetch, shader caches, crash dumps, and temp files).
+- **🖥️ Live Activity Log Terminal**: Watch live step-by-step cleaning details right on your dashboard with color-coded feedback (easily toggle on/off in Settings).
 - **🛡️ 100% Safe & Protected**: Your personal **Downloads** folder and **Recycle Bin** are strictly protected and never touched.
 - **🎮 Game Mode Optimizer**: Automatically switches Windows to "High Performance" power mode and lowers background app priority when gaming.
 - **⚡ Standby Memory Purge**: Clears Windows standby memory list before games start to eliminate in-game micro-stutters.
