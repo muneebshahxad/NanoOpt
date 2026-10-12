@@ -37,6 +37,7 @@
 - **🔔 Desktop Notifications**: Displays helpful, silent desktop notifications when memory is recovered.
 - **📊 Activity History & CSV Export**: Automatically logs all cleaning events with one-click export to CSV.
 - **🔄 Instant Auto-Updates (OTA)**: Checks for new versions automatically and updates in one click.
+- **☕ Support & Tipping**: Support continuous development directly through Card/Apple Pay or zero-fee crypto in Settings.
 - **🌙 Modern Windows 11 Design**: Clean, compact dark/light mode interface with real-time CPU and RAM monitoring rings.
 
 ---

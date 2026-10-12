@@ -147,6 +147,7 @@
 | **Locked File Tracking** | Gracefully tracks locked/in-use Windows files during deep clean and reports summary to terminal without stopping execution. |
 | **Auto-Scroll & 150-Line Buffer** | Auto-scrolls to the absolute bottom on every entry. Automatically caps history at 150 lines to prevent memory bloat. |
 | **Adaptive Dynamic Layout** | Window height resizes dynamically (`390×315` when hidden, `390×440` when visible, up to `490` during OTA updates) with zero clipping or squishing of CPU/RAM cards. |
+| **Developer Monetization & Support Module** | Added clean, non-intrusive "Support the Developer" section to Settings featuring Lemon Squeezy checkout (Card/Apple Pay) and copyable Crypto tipping modal (Binance Pay ID + USDT BEP20). |
 
 ### Settings Dialog (v1.3.0 Final)
 | Setting | Default | Description |
@@ -157,11 +158,13 @@
 | Taskbar Toast Notifications | ON | Toggle |
 | Game Mode | OFF | Toggle |
 | Clean Browser Cache | OFF | Toggle (browser history/cache protected by default) |
-| Show/Hide Logs | **ON** | **New toggle** — Controls terminal visibility on main dashboard |
+| Show/Hide Logs | **ON** | Toggle — Controls terminal visibility on main dashboard |
 | Process Exclusions | (list) | Comma-separated .exe names |
 | Game Watch List | (empty) | Comma-separated game .exe names |
 | Export CSV | — | Button |
 | Open Log | — | Button |
+| ☕ Support via Card / Apple Pay | — | Lemon Squeezy checkout button |
+| 🪙 Tip via Crypto (Zero Fees) | — | Copyable crypto donation modal button |
 | Save & Apply | — | Button |
 
 ---
