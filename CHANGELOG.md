@@ -163,8 +163,8 @@
 | Game Watch List | (empty) | Comma-separated game .exe names |
 | Export CSV | — | Button |
 | Open Log | — | Button |
-| ☕ Support via Card / Apple Pay | — | Lemon Squeezy checkout button |
-| 🪙 Tip via Crypto (Zero Fees) | — | Copyable crypto donation modal button |
+| ☕ Support via Card | — | Lemon Squeezy checkout button (Card, Apple Pay, Google Pay) |
+| 🪙 Tip via Crypto | — | Copyable crypto donation modal button (Binance Pay & USDT) |
 | Save & Apply | — | Button |
 
 ---
