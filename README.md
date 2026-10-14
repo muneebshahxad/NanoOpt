@@ -46,44 +46,12 @@ See the complete feature log and release history across all versions in [**CHANG
 
 ---
 
-## 📥 Download (Pre-built Executable)
+## 📥 Download & Usage
 
 1. Head to the official [**Releases**](https://github.com/muneebshahxad/NanoOpt/releases) page.
 2. Download the latest compiled binary (`NanoOpt.exe`).
 3. Right-click and select **Run as Administrator** (required for deep system cache cleanup and memory working set optimization).
 4. No installation or Python setup needed — it is a standalone portable application.
-
----
-
-## 🛠️ Building from Source
-
-### Prerequisites
-* Windows 10 or 11
-* Python 3.10+ (Python 3.12 recommended)
-* Administrator privileges
-
-### Installation & Run
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/muneebshahxad/NanoOpt.git
-   cd NanoOpt
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run NanoOpt:**
-   ```bash
-   python main.py
-   ```
-
-4. **Compile to Standalone `.exe` (PyInstaller):**
-   ```bash
-   pyinstaller --noconfirm --clean NanoOpt.spec
-   ```
 
 ---
 
