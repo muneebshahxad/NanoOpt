@@ -1,8 +1,3 @@
-# Proprietary Source Code (Strictly Kept Local)
-*.py
-main.py
-requirements.txt
-
 # Build & packaging artifacts
 dist/
 dist_v2/
@@ -10,19 +5,28 @@ build/
 builds/
 *.spec
 
-# Runtime files
+# Private Certificates & Keys (Never commit secrets)
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Runtime & dynamic state files
 settings.json
 nanoopt_activity.log
 *.log
+watch_list.json
 
-# Python cache & compiled files
+# Python cache & compiled binaries
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# IDE & Editor files
+# IDE, OS & Editor files
 .vscode/
 .idea/
 *.swp
 *.bak
+Thumbs.db
+Desktop.ini
