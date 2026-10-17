@@ -143,3 +143,19 @@
 | GitHub Repo | https://github.com/muneebshahxad/NanoOpt |
 | Releases | https://github.com/muneebshahxad/NanoOpt/releases |
 | Developer | https://github.com/muneebshahxad |
+
+---
+
+## ❌ Features Removed & Deprecated (History & Rationale)
+
+Throughout development, several features were tested and deliberately removed or refined to protect user safety, maintain minimalism, and eliminate bloat:
+
+| Feature Removed | Version | Rationale & User Impact |
+|---|---|---|
+| **Lemon Squeezy Checkout Integration** | Removed in v1.3.0 | Lemon Squeezy Merchant of Record does not support tip jar / voluntary donationware models (only paid digital products/SaaS). Replaced with direct, zero-fee **Crypto (Binance Pay ID & USDT BEP20)**. |
+| **GPU / VRAM Metric Card** | Removed in v1.2.0 | Added initially in v1.1.0 testing (`nvidia-smi` poller). Removed because it widened the window, consumed background CPU cycles on laptops/APUs, and returned `N/A` on Intel/AMD integrated GPUs. Reverted to clean dual-card CPU+RAM layout (`390px`). |
+| **Recycle Bin Emptying (`SHEmptyRecycleBinW`)** | Removed in v1.2.0 | Removed to enforce zero-data-loss user safety. Users frequently leave items in the Recycle Bin for manual recovery; purging it caused accidental loss. Recycle Bin is now hardcoded safe. |
+| **Downloads Directory Scanning** | Removed in v1.2.0 | User `%USERPROFILE%\Downloads` folder was strictly blacklisted and hardcoded excluded from all junk cleaners to protect personal installer and browser download files. |
+| **"(Bypass UAC)" Label in Settings** | Removed in v1.2.0 | The phrase caused confusion for non-technical users. The feature still functions via Windows Task Scheduler elevated credentials, but is now simply labeled **"Run on Startup"**. |
+| **Proprietary Source Code Lock** | Removed in v1.3.0 | The closed-source distribution model was retired. NanoOpt is now fully **Open Source** under the **GNU General Public License v3.0 (GPLv3)**. |
+
