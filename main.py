@@ -1273,20 +1273,13 @@ class SettingsDialog(QDialog):
         support_row.setContentsMargins(0, 0, 0, 0)
         support_row.setSpacing(8)
 
-        self.btn_support_card = PrimaryPushButton("☕ Support via Card")
-        self.btn_support_card.setFixedHeight(32)
-        self.btn_support_card.setSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Fixed)
-        self.btn_support_card.setToolTip("Support development via Lemon Squeezy (Card, Apple Pay, Google Pay)")
-        self.btn_support_card.clicked.connect(self._on_support_card)
-
-        self.btn_support_crypto = PushButton("🪙 Tip via Crypto")
+        self.btn_support_crypto = PrimaryPushButton("🪙 Tip via Crypto (Binance Pay / USDT)")
         self.btn_support_crypto.setFixedHeight(32)
-        self.btn_support_crypto.setSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Fixed)
-        self.btn_support_crypto.setToolTip("View Binance Pay ID and USDT BEP20 deposit address")
+        self.btn_support_crypto.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        self.btn_support_crypto.setToolTip("View Binance Pay ID and USDT BEP20 deposit address (Zero Fees)")
         self.btn_support_crypto.clicked.connect(self._on_support_crypto)
 
-        support_row.addWidget(self.btn_support_card, 1)
-        support_row.addWidget(self.btn_support_crypto, 1)
+        support_row.addWidget(self.btn_support_crypto)
         root.addLayout(support_row)
 
         root.addStretch()
@@ -1346,9 +1339,6 @@ class SettingsDialog(QDialog):
         except: pass
 
         self.accept()
-
-    def _on_support_card(self):
-        webbrowser.open("https://nanoopt.lemonsqueezy.com/checkout/buy/cd385879-28c2-4fbd-900a-69d1223c165d")
 
     def _on_support_crypto(self):
         crypto_text = (
