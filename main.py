@@ -1884,17 +1884,34 @@ class NanoOptWindow(QWidget):
         logging.warning(f"OTA: {err}")
 
     def _on_update_available(self, new_version: str, download_url: str):
-        """Shows a MessageBox prompting the user to update."""
+        """Shows a MessageBox prompting the user to update with adaptive text sizing."""
         self._pending_update_version = new_version
         self._restore()  # Bring window to front
 
-        dlg = MessageBox(
-            f"Update Available — v{new_version}",
+        raw_msg = (
             f"A new version of NanoOpt (v{new_version}) is available.\n"
             f"You are currently running v{APP_VERSION}.\n\n"
-            f"Would you like to update now?",
-            self
+            f"Would you like to update now?"
         )
+
+        dlg = MessageBox(f"Update Available - v{new_version}", raw_msg, self)
+        
+        # Adaptive dialog geometry to prevent awkward mid-sentence line breaks
+        try:
+            dlg.contentLabel.setText(raw_msg)
+            dlg.contentLabel.setWordWrap(True)
+            dlg.titleLabel.adjustSize()
+            dlg.contentLabel.adjustSize()
+
+            w_hint = max(dlg.titleLabel.sizeHint().width(), dlg.contentLabel.sizeHint().width()) + 52
+            modal_w = min(max(w_hint, 310), self.width() - 30)
+            dlg.contentLabel.setFixedWidth(modal_w - 48)
+            dlg.contentLabel.adjustSize()
+            modal_h = dlg.titleLabel.sizeHint().height() + dlg.contentLabel.sizeHint().height() + 115
+            dlg.widget.setFixedSize(modal_w, modal_h)
+        except Exception:
+            pass
+
         dlg.yesButton.setText("Update Now")
         dlg.cancelButton.setText("Later")
 
